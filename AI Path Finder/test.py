@@ -47,7 +47,7 @@ C_PANEL_HEADER = (60, 80, 160)
 C_FWD_ITEM = (255, 220, 0)
 C_BWD_ITEM = (180, 220, 255)
 
-DIRECTIONS = [(-1, 0), (0, 1), (1, 0), (1, 1), (0, -1), (-1, -1), (-1, 1), (1, -1)]
+DIRECTIONS = [(-1, 0), (0, 1), (1, 0), (1, 1), (0, -1), (-1, -1)]
 ALGO_NAMES = ["BFS", "DFS", "UCS", "DLS", "IDDFS", "Bidir"]
 
 
@@ -608,7 +608,7 @@ def main():
         font_panel_small = pygame.font.SysFont(None, 13)
 
     screen = pygame.display.set_mode((WIN_W, WIN_H))
-    pygame.display.set_caption("PATH FINDER")
+    pygame.display.set_caption("AI Pathfinder - Uninformed Search Visualizer")
     clock = pygame.time.Clock()
 
     START = (7, 1)
